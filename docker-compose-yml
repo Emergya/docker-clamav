@@ -1,0 +1,6 @@
+version: '3'
+services:
+  clamav: 
+    image: docker-registry.emergya.com:443/emergya/clamav
+  volumes:
+    - /opt/data/docker-containers-volumes/clamav/var/lib/clamav:/var/lib/clamav
